@@ -1,4 +1,4 @@
-/* #include "lab_1/lab_1.cpp"
+#include "lab_1/lab_1.cpp"
 #include <iostream>
 
 using namespace std;
@@ -17,4 +17,4 @@ anchor:
 		return 0;
 	}
 	goto anchor;
-} */
+}
