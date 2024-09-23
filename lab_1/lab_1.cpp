@@ -8,7 +8,7 @@
 using namespace std;
 
 
-int main() {
+int lab1() {
     char name1[12], name2[12], name3[12];
     char type1, type2, type3;
     unsigned short amou1, amou2, amou3;
