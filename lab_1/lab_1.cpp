@@ -1,3 +1,7 @@
+/* My lab speak only English, so Фланець - Flange, Перехідник - Adapter, Станина - Base, Кількість - Amount, Тип - Type,
+Вага за 1 шт - Weight her item, "Примітка: О – оригінальна, П – покупна, З – запозичена" - "Note: O - original, P - purchased, Z - borrowed (Z - засуджую)"
+Код розроблений для параметрів, які знаходяться в табличці мого варіанту (------ 4 Варіант ------)*/
+
 #include <iostream>
 #include <iomanip>
 
@@ -17,18 +21,18 @@ int main() {
     cout << "3. Enter: name, type, amount, weight of 1 detail > ";
     cin >> name3 >> type3 >> amou3 >> wgh3;
 
-    cout << "------------------------------------------------------\n";
-    cout << "|               Details information                  |\n";
-    cout << "|----------------------------------------------------|\n";
-    cout << "|  Name  |  Type  | Amount |    Weight per item (g)  |\n";
-    cout << "|--------|--------|--------|-------------------------|\n";
+    cout << "-------------------------------------------------------\n";
+    cout << "|                Details information                  |\n";
+    cout << "|-----------------------------------------------------|\n";
+    cout << "|    Name   | Type |  Amount   |  Weight per item (g) |\n";
+    cout << "|-----------|------|-----------|----------------------|\n";
 
-    cout << setw(12) << name1 << " |  " << type1 << "  | "
-        << setw(9) << amou1 << " | " << setw(11) << fixed << setprecision(1) << wgh1 << " |\n";
-    cout << setw(12) << name2 << " |  " << type2 << "  | "
-        << setw(9) << amou2 << " | " << setw(11) << fixed << setprecision(1) << wgh2 << " |\n";
-    cout << setw(12) << name3 << " |  " << type3 << "  | "
-        << setw(9) << amou3 << " | " << setw(11) << fixed << setprecision(1) << wgh3 << " |\n";
+    cout << "|" << setw(10) << name1 << " |  " << type1 << "   | "
+        << setw(9) << amou1 << " | " << setw(20) << fixed << setprecision(1) << wgh1 << " |\n";
+    cout << "|" << setw(10) << name2 << " |  " << type2 << "   | "
+        << setw(9) << amou2 << " | " << setw(20) << fixed << setprecision(1) << wgh2 << " |\n";
+    cout << "|" << setw(10) << name3 << " |  " << type3 << "   | "
+        << setw(9) << amou3 << " | " << setw(20) << fixed << setprecision(1) << wgh3 << " |\n";
 
     cout << "-------------------------------------------------------\n";
     cout << "|   Note: O - original, P - purchased, Z - borrowed   |\n";
