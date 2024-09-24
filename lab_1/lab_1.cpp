@@ -1,6 +1,4 @@
-/* My lab speak only English, so ������� - Flange, ���������� - Adapter, ������� - Base, ʳ������ - Amount, ��� - Type,
-���� �� 1 �� - Weight her item, "�������: � � ����������, � � �������, � � ����������" - "Note: O - original, P - purchased, Z - borrowed (Z - ��������)"
-��� ����������� ��� ���������, �� ����������� � �������� ���� ������� (------ 4 ������ ------)*/
+// Variant 4
 
 #include <iostream>
 #include <iomanip>
