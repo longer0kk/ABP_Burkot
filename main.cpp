@@ -9,7 +9,7 @@ int main(void)
 {
 	int lab_num;
 anchor:
-	cout << "Give me number of the lab you want to run" << endl;
+	cout << "Give me number of the lab you want to run: " << endl;
 	cin >> lab_num;
 
 	switch (lab_num) {
@@ -20,7 +20,7 @@ anchor:
 	
 	case 2:
 		int lab_2_v;
-	    cout << "Give me number of the lab you want to run" << endl;
+	    cout << "Which one? " << endl;
 	    cin >> lab_num;
 		switch (lab_2_v) {
 	       
