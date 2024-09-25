@@ -1,14 +1,14 @@
+#include <iostream>
 #include "lab_1/lab_1.cpp"
 #include "lab_2/lab_2.cpp"
 #include "lab_2/lab_2_2.cpp"
-#include <iostream>
 
 using namespace std;
 
 int main(void) 
 {
 	int lab_num;
-anchor:
+	int lab_2_v;
 	cout << "Give me number of the lab you want to run: " << endl;
 	cin >> lab_num;
 
@@ -19,7 +19,6 @@ anchor:
 		break;
 	
 	case 2:
-		int lab_2_v;
 	    cout << "Which one? " << endl;
 	    cin >> lab_2_v;
 		switch (lab_2_v) {
@@ -32,10 +31,10 @@ anchor:
 		      lab_2_2();
 	          break;
 		}
+	break;
 	
 	default:
-		cout << "Lab work does not exist";
-		break;
+		cout << "Lab work does not exist. " << endl;
 	}
-	goto anchor;
+	return 0;
 }
