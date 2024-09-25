@@ -21,7 +21,7 @@ anchor:
 	case 2:
 		int lab_2_v;
 	    cout << "Which one? " << endl;
-	    cin >> lab_num;
+	    cin >> lab_2_v;
 		switch (lab_2_v) {
 	       
 		   case 1:
