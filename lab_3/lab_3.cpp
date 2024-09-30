@@ -26,5 +26,5 @@ int lab_3()
     }
 
     cout << "Kilkist' par z protilezh znakami: " << sumik << endl;
-    return 0;
+    return 0;.
 }

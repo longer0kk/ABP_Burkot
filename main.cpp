@@ -40,7 +40,7 @@ int main(void)
 
 	
 	default:
-		cout << "Lab work does not exist. " << endl;
+		cout << "Lab work does not exist." << endl;
 	}
 	return 0;
 }
