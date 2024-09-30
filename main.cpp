@@ -37,7 +37,6 @@ int main(void)
 	case 3:
 		lab_3();
 		break;
-
 	
 	default:
 		cout << "Lab work does not exist." << endl;
