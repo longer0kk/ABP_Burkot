@@ -7,17 +7,18 @@ using namespace std;
 
 int lab_3()
 {
-    int Ar[200];
+    const int size = 200;
+    int Ar[size];
     int sumik = 0;
     srand(time(0));
-    for (int i = 0; i < 200; i++) 
+    for (int i = 0; i < size; i++) 
     {
         Ar[i] = rand() % 101 - 50;
         cout << Ar[i] << " ";
     }
     cout << endl;
     
-    for (int i = 0; i < 200 - 1; i++) 
+    for (int i = 0; i < size - 1; i++) 
     {
         if (Ar[i] * Ar[i+1] < 0) 
         {

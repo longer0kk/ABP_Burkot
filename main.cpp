@@ -3,6 +3,7 @@
 #include "lab_2/lab_2.cpp"
 #include "lab_2/lab_2_2.cpp"
 #include "lab_3/lab_3.cpp"
+#include "lab_4/lab_4.cpp"
 
 using namespace std;
 
@@ -36,6 +37,10 @@ int main(void)
 
 	case 3:
 		lab_3();
+		break;
+	
+	case 4:
+		lab_4();
 		break;
 	
 	default:
