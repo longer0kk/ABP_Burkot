@@ -1,8 +1,10 @@
+// 4 Varik
+
 #include <iostream>
 
 using namespace std;
 
-void n1_lab6(int B[], int size)
+void n1_lab6(int* B, int size)
 {
     for (int i = 0; i < size; i++)
     {
@@ -10,7 +12,7 @@ void n1_lab6(int B[], int size)
     }
 }
 
-void n2_lab6(int A[][100], int B[], int n)
+void n2_lab6(int** A, int* B, int n)
 {
     int c = 0;
 
@@ -37,7 +39,7 @@ void n2_lab6(int A[][100], int B[], int n)
     }
 }
 
-void n3_lab6(int A[][100], int n)
+void n3_lab6(int** A, int n)
 {
    for (int i = 0; i < n; i++)
     {
@@ -55,14 +57,19 @@ int lab_6()
     cout << "Rozmirnist` matrici: ";
     cin >> n;
 
-    int A[100][100];
-    int B[10000];
-    
     if (n < 1 || n > 100)
     {
         cout << "Nepravilna rozmirnist` matrici. Treba vid 1 do 100." << endl;
         return 1;
     }
+
+    int** A = new int*[n];
+    for (int a = 0; a < n; a++)
+    {
+        A[a] = new int[n];
+    }
+
+    int* B = new int[n*n];
 
     n1_lab6(B, n * n);
     n2_lab6(A, B, n);

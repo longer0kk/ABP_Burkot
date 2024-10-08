@@ -5,7 +5,7 @@
 #include <cstdlib>
 using namespace std;
 
-void n1_lab5(int Ar[], int size)
+void n1_lab5(int* Ar, int size)
 {
     srand(time(0));
     
@@ -17,7 +17,7 @@ void n1_lab5(int Ar[], int size)
     cout << endl;
 }
 
-void n2_lab5(int Ar[], int size)
+void n2_lab5(int* Ar, int size)
 {
     cout << "Dianky z sumoyu 0:" << endl;
     bool found = false;
@@ -48,7 +48,7 @@ int lab_5()
     cout << "Input size: ";
     cin >> size;
     
-    int Ar[size];
+    int* Ar = new int[size];
     n1_lab5(Ar, size);
     n2_lab5(Ar, size);
 
