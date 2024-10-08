@@ -57,12 +57,6 @@ int lab_6()
     cout << "Rozmirnist` matrici: ";
     cin >> n;
 
-    if (n < 1 || n > 100)
-    {
-        cout << "Nepravilna rozmirnist` matrici. Treba vid 1 do 100." << endl;
-        return 1;
-    }
-
     int** A = new int*[n];
     for (int a = 0; a < n; a++)
     {
