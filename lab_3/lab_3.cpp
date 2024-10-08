@@ -20,7 +20,7 @@ int lab_3()
     
     for (int i = 0; i < size - 1; i++) 
     {
-        if (Ar[i] * Ar[i+1] < 0) 
+        if (Ar[i] * Ar[i+1] < 0 || Ar[i] * Ar[i+1] == 0) 
         {
             sumik++;
         }

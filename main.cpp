@@ -4,6 +4,8 @@
 #include "lab_2/lab_2_2.cpp"
 #include "lab_3/lab_3.cpp"
 #include "lab_4/lab_4.cpp"
+#include "lab_5/lab_5.cpp"
+#include "lab_6/lab_6.cpp"
 
 using namespace std;
 
@@ -41,6 +43,14 @@ int main(void)
 	
 	case 4:
 		lab_4();
+		break;
+
+	case 5:
+		lab_5();
+		break;
+
+	case 6:
+		lab_6();
 		break;
 	
 	default:
