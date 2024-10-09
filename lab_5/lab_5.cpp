@@ -51,6 +51,7 @@ int lab_5()
     int* Ar = new int[size];
     n1_lab5(Ar, size);
     n2_lab5(Ar, size);
-
+    
+    delete[] Ar;
     return 0;
 }

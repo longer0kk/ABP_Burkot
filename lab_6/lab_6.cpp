@@ -68,5 +68,12 @@ int lab_6()
     n1_lab6(B, n * n);
     n2_lab6(A, B, n);
     n3_lab6(A, n);
+
+    for (int a = 0; a < n; a++)
+    {
+        delete[] A[a];
+    }
+    delete[] A;
+    delete[] B;
     return 0;
 }
