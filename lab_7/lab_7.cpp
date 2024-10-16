@@ -14,12 +14,17 @@ struct Detail
     float wgh;
 };
 
-void input(Detail details[], int n)
+void input(Detail details[], int &n)
 {
     for (int i = 0; i < n; i++)
     {
         cout << i+1 << " Enter: name, type, amount, weight of detail > ";
         cin >> details[i].name >> details[i].type >> details[i].amou >> details[i].wgh;
+        if (strcmp(details[i].name, "***") == 0)
+        {
+            n = i;
+            break;
+        }
     }
 }
 
@@ -55,9 +60,7 @@ void output(const Detail details[], int n)
 
 int lab_7() 
 {
-    int n;
-    cout << "Vvedit` kil`kist detaley: ";
-    cin >> n;
+    int n = 10;
     Detail* details = new Detail[n];
 
     input(details, n);
