@@ -9,6 +9,7 @@
 #include "lab_7/lab_7.cpp"
 #include "lab_8/lab_8.cpp"
 #include "lab_9/lab_9.cpp"
+#include "lab_10/lab_10.cpp"
 
 using namespace std;
 
@@ -66,6 +67,10 @@ int main(void)
 
 	case 9:
 		lab_9();
+		break;
+
+	case 10:
+		lab_10();
 		break;
 	
 	default:
