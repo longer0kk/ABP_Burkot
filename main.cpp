@@ -12,6 +12,7 @@
 #include "lab_10/lab_10.cpp"
 #include "lab_11/lab_11.cpp"
 #include "lab_12/lab_12.cpp"
+#include "lab_13/lab_13.cpp"
 
 using namespace std;
 
@@ -81,6 +82,10 @@ int main(void)
 
 	case 12:
 		lab_12();
+		break;
+
+	case 13:
+		lab_13();
 		break;
 	
 	default:
