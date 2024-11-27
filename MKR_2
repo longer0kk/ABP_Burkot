@@ -1,1 +1,26 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
 
+int centuryFromYear(int year) 
+{
+  int num = year; 
+  int Equals;
+  int j = 100;
+
+  do {
+      if (j >= num) {
+        if (j - 51 > num) {
+          Equals = num / 100 + 1;
+        } else if (j + 50 > num) { // Типу заокруглює я незнаю
+          Equals = num / 100;
+        }
+      } else {
+        j = j + 100;
+      }
+  } while (j < num);
+  cout << Equals;
+
+  return 0; // 1
+
+} // Я тупий як виявилось, я як побачив другу - у мене очі на лоба вилізли
